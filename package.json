@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass src/styles.scss dist/styles.css",
+    "sass": "sass src/styles.scss public/styles.css",
+    "build": "sass src/styles.scss public/styles.css",
     "start": "npm run build"
   },
   "keywords": [],

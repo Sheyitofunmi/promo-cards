@@ -55,7 +55,7 @@ This is a **responsive promo card** project, created to demonstrate frontend dev
 
 ### Deployment:
 
-This project is deployed using **Vercel**. You can view the live demo [here](https://your-deployment-link.com).
+This project is deployed using **Vercel**. You can view the live demo [here](https://promo-cards-gamma.vercel.app/).
 
 ---
 
@@ -77,7 +77,7 @@ written-test/
 For any questions or feedback, feel free to contact me:
 
 - **Email**: seyi.ajewole22@gmail.com
-- **GitHub**: [Your GitHub Profile](https://github.com/yourusername)
+- **GitHub**: [Your GitHub Profile](https://github.com/Sheyitofunmi)
 
 ```
 

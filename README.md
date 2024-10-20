@@ -27,7 +27,7 @@ This is a **responsive promo card** project, created to demonstrate frontend dev
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/promoCard.git
+   git clone https://github.com/Sheyitofunmi/promo-card.git
    cd senior-frontend-ui-test/technical-test
    ```
 ````
@@ -55,7 +55,7 @@ This is a **responsive promo card** project, created to demonstrate frontend dev
 
 ### Deployment:
 
-This project is deployed using **Vercel**. You can view the live demo [here](https://promo-cards-gamma.vercel.app/).
+This project is deployed using **Vercel**. You can view the live demo [here](https://promo-cards-cufp.vercel.app/).
 
 ---
 

@@ -1,0 +1,30 @@
+@use "components/variables" as *;
+@use "components/button";
+@use "components/card";
+@use "components/layout";
+@use "components/header";
+@use "components/media";
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../src/assets/fonts/Raleway-Regular.woff2") format("woff2"),
+    url("../src/assets/fonts/Raleway-Regular.woff") format("woff"),
+    url("../src/assets/fonts/Raleway-Bold.woff") format("woff"),
+    url("../src/assets/fonts/Raleway-Bold.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}

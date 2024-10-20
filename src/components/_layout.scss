@@ -1,0 +1,101 @@
+@use "variables" as *;
+@use "../components/media";
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  background-color: $bg-background;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15rem;
+    height: 15rem;
+    background-image: url("../../src/assets/images/background-image.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  @include media.respond("small") {
+    &::before {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  @include media.respond("medium") {
+    &::before {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  @include media.respond("large") {
+    &::before {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+
+  @include media.respond("x-large") {
+    &::before {
+      width: 28rem;
+      height: 28rem;
+    }
+  }
+
+  @include media.respond("xx-large") {
+    &::before {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+}
+
+.featured-promos {
+  max-width: $max-width;
+  position: relative;
+  font-family: $font-family;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 3rem;
+  text-align: center;
+  column-gap: 4rem;
+
+  @include media.respond("small") {
+    display: block;
+    padding: 0.5rem 1rem;
+    column-gap: unset;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0.5rem;
+  gap: 2rem;
+
+  @include media.respond("small") {
+    padding: 0rem 0.5rem 2rem;
+  }
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @include media.respond("large") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media.respond("small") {
+    grid-template-columns: 1fr;
+  }
+}

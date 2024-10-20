@@ -1,0 +1,14 @@
+# Node modules directory
+node_modules/
+
+
+# Ignore log files and temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Ignore package-lock.json 
+package-lock.json
+
+# Ignore source maps
+dist/*.css.map

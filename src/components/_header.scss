@@ -1,0 +1,39 @@
+@use "variables" as *;
+@use "../components/button";
+@use "../components/media";
+
+.header {
+  text-align: center;
+
+  &__title {
+    font-size: 2.3rem;
+    font-weight: 900;
+    color: $text-color;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 1.3rem;
+    line-height: 1;
+    padding-top: 2rem;
+  }
+
+  @include media.respond("medium") {
+    padding: 1.5rem 1rem;
+
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include media.respond("small") {
+    padding: 1rem 0.5rem;
+
+    &__title {
+      font-size: 1.6rem;
+      writing-mode: unset;
+      position: static;
+      top: unset;
+      font-weight: bolder;
+      text-align: start;
+    }
+  }
+}
